@@ -1,0 +1,92 @@
+@import "../../../style/skin.wxss";
+.submit-line {
+	width: 100%;
+}
+
+.form-group .mobile {
+	flex: 1;
+	text-align: left;
+}
+.profile {
+  margin-bottom: 20rpx;
+  margin-left: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer {
+  position: fixed; /* 固定在底部 */
+  bottom: 5%; /* 距离底部的距离 */
+  width: 100%; /* 占满全宽 */
+  text-align: center; /* 文本居中 */
+}
+ 
+.logout {
+  background-color: transparent; /* 无背景色 */
+  border: none; /* 无边框 */
+  color: blue; /* 蓝色文字 */
+  font-size: 30rpx; /* 字体大小 */
+  text-decoration: underline; /* 添加下划线 */
+  cursor: pointer; /* 鼠标指针变为手形 */
+}
+.avatar {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%; /* 设置圆形 */
+  border: 2rpx solid #ccc; /* 可选：添加边框 */
+}
+
+.submit-line {
+	width: 100%;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1rpx solid #ddd;
+  border-radius: 5rpx;
+  padding: 10rpx;
+  width: 300rpx;
+  cursor: pointer; /* 使容器看起来可点击 */
+}
+
+.input-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+  height: 100vh; /* 设置容器高度为视窗高度 */
+}
+
+.form-group {
+  display: flex; /* 使用 Flexbox */
+  align-items: center; /* 垂直居中 */
+  margin-top: 20rpx;
+}
+
+.title {
+  font-size: 30rpx;
+  color: #666;
+  margin-right: 10rpx; /* 添加右侧外边距 */
+}
+
+.pickerView {
+  display: inline-block; /* 让 <picker> 成为内联元素 */
+  width: 80%; /* 自动宽度 */
+  text-align: right; 
+}
+
+.picker {
+  display: inline-block; /* 让 <view> 成为内联元素 */
+  font-size: 28rpx; 
+  color: #333;  
+  align-items: center;  
+  padding: 30rpx;
+  width: 100%; 
+  cursor: pointer; /* 使容器看起来可点击 */ 
+}

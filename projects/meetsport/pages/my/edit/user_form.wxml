@@ -1,0 +1,45 @@
+<view class="form-box shadow-project card-project"> 
+	
+  <view class="form-group">
+    <view class="profile">
+    <image src="{{avatar_url}}" mode="aspectFill" class="avatar" bindtap="chooseAvatar"></image>
+  </view>
+  </view>
+
+	<view class="form-group">
+		<view class="title">昵称</view>
+		<input bindblur="handleNickNameBlur" type="nickname"  placeholder="填写您的昵称" placeholder-class="phc" model:value="{{nick_name}}" maxlength="30"></input>
+	</view>
+	
+  
+  <view class="form-group"> 
+    <view class="title">性别</view> 
+        <picker  class="pickerView" mode="selector" range="{{genders}}" bindchange="handleGenderPickerChange">
+            <view class="picker" style="{{gender?'':'color: #999;'}}">{{gender ? gender : '请选择'}} </view> 
+        </picker> 
+  </view>
+
+  <view class="form-group"> 
+    <view class="title">生日</view> 
+        <picker  class="pickerView" mode="date" value="{{birth}}" bindchange="handleDateChange">
+            <view class="picker" style="{{birth?'':'color: #999;'}}">{{birth ? birth : '请选择'}}</view> 
+        </picker> 
+  </view>
+ 
+
+  <view class="form-group"> 
+    <view class="title">身高</view> 
+        <picker  class="pickerView" mode="selector" range="{{heights}}" bindchange="handleHeightChange">
+            <view class="picker" style="{{height?'':'color: #999;'}}">{{height ? height : '请选择'}}</view> 
+        </picker> 
+  </view>
+
+  <view class="form-group"> 
+    <view class="title">体重</view> 
+        <picker  class="pickerView" mode="selector" range="{{weights}}" bindchange="handleWeightChange">
+            <view class="picker" style="{{weight?'':'color: #999;'}}">{{weight ? weight : '请选择'}}</view> 
+        </picker> 
+  </view>
+
+</view>
+ 

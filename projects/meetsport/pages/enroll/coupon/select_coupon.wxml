@@ -1,0 +1,19 @@
+<view class="red-packet-list-container">
+  <view wx:if="{{!isLoad}}" class="margin-top load loading text-l load-project"></view>
+  <scroll-view wx:else class="red-packet-list-body" scroll-y="true"> 
+    <block wx:for="{{coupons}}" wx:key="index">
+      <view class="red-packet-list-item" bindtap="selectCoupon" data-id="{{item.id}}" data-info="{{item}}">
+        <view class="red-packet-list-item-check" wx:if="{{item.id+'' === usedCouponId+''}}"> <!-- 注意这里的wx:if指令 -->
+          <image src="../../../images/checked.png" style="height: 50rpx;"></image> <!-- 替换为您的勾选图标URL -->
+        </view>
+        <view class="red-packet-list-item-name">{{item.name}}</view>
+        <view class="red-packet-list-item-discount">{{item.num}}{{type == '1'?'折':'元'}}</view>
+        <view class="red-packet-list-item-description">有效期至{{item.expiredDate}}</view>
+        <view class="red-packet-list-item-limit">限登录手机号为175****9124使用。</view>
+      </view>
+    </block>
+  </scroll-view> 
+  <view class="main padding-project">  
+  <view  class="logout" bindtap="cancelCoupon">本次不使用优惠券</view>
+</view>
+</view>

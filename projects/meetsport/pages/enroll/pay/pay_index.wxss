@@ -1,0 +1,173 @@
+.container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  background-color: #f7f7f7;
+  border-bottom: 1rpx solid #ebebeb;
+}
+
+.img-section {
+  display: inline-block;
+}
+
+.img-wrap {
+  max-width: 30%; 
+  display: inline-block;
+  vertical-align: middle;
+} 
+
+.text-wrap {
+  max-width: 45%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+
+/* 其他样式 */
+
+
+.section {
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  border-bottom: 1rpx solid #ebebeb;
+  background-color: #f7f7f7;
+} 
+.label {
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-right: 20rpx;
+}
+
+.option {
+  height: 80rpx;
+  align-items: center;
+  margin-left: 20rpx;
+  border-bottom: 1rpx solid #ebebeb;
+  flex-grow: 1;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.option-icon {
+  width: 8%;
+  margin-right: 20rpx;
+}
+ 
+
+.option-checkbox {
+  margin-left: auto;
+  margin-right: 20rpx;
+}
+
+.button {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20rpx;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background-color: #ccc;
+}
+
+.form-group {
+  display: flex; /* 使用 Flexbox */
+  align-items: center; /* 垂直居中 */
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  border-bottom: 1rpx solid #ebebeb;
+  background-color: #f7f7f7;
+}
+
+.title {
+  font-size: 30rpx;
+  color: #666;
+  margin-right: 10rpx; /* 添加右侧外边距 */
+}
+
+.pickerView {
+  display: inline-block; /* 让 <picker> 成为内联元素 */
+  width: 80%; /* 自动宽度 */
+  text-align: right; 
+}
+
+.picker {
+  display: inline-block; /* 让 <view> 成为内联元素 */
+  font-size: 28rpx; 
+  color: #333;  
+  align-items: center;  
+  padding: 30rpx;
+  width: 100%; 
+  cursor: pointer; /* 使容器看起来可点击 */ 
+}
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.75;
+  overflow: hidden;
+ }
+ .bottom-button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 0 0 10rpx 10rpx;
+  font-size: 32rpx;
+  z-index: 999;
+}
+.mask-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mask-content {
+  width: 80%;
+  padding: 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx 5rpx rgba(0, 0, 0, 0.2);
+}
+
+.mask-text {
+  text-align: center;
+  font-size: 32rpx;
+  color: #333;
+}

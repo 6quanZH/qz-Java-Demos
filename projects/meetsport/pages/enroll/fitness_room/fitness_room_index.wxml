@@ -1,0 +1,46 @@
+<view class="container">
+  <swiper class="swiper" indicator-dots interval="2000" duration="500" circular autoplay>
+      <image class="swiper-image" src="{{info.imgs}}" mode="aspectFill"></image>
+  </swiper>
+</view>
+<view class="main"> 
+	<view class="down">
+		<view class="menu card-project shadow-project">
+			<view bindtap="url" data-url="../../enroll/all_select_project/select_project?id={{info.id}}" class="item">
+				<view class="item-inner">
+					<view class="img">
+						<image src="../../../images/menu/1.png" />
+					</view>
+					<view class="title">入场码</view>
+				</view>
+			</view>  
+      <view bindtap="url" data-url="../fitness_room_vip/fitness_room_vip?id={{info.id}}" class="item">
+				<view class="item-inner">
+					<view class="img">
+						<image src="../../../images/menu/1.png" />
+					</view>
+					<view class="title">会员卡</view>
+				</view>
+			</view>  
+      <view bindtap="url" data-url="../fitness_room_vip/fitness_room_vip?id={{info.id}}" class="item">
+				<view class="item-inner">
+					<view class="img">
+						<image src="../../../images/menu/1.png" />
+					</view>
+					<view class="title">购买私教课</view>
+				</view>
+			</view>  
+      <view bindtap="url" data-url="../../enroll/all_select_project/select_project?id={{info.id}}" class="item">
+				<view class="item-inner">
+					<view class="img">
+						<image src="../../../images/menu/1.png" />
+					</view>
+					<view class="title">私教预约</view>
+				</view>
+			</view>  
+		</view> 
+	</view>
+</view>
+<view class="container2">
+   
+</view>

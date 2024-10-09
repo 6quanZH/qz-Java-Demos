@@ -1,0 +1,28 @@
+<view class="container">
+  <swiper class="swiper" indicator-dots interval="2000" duration="500" circular autoplay>
+    <swiper-item wx:for="{{circularList}}" wx:key="url">
+      <image class="swiper-image" src="{{item}}" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="main"> 
+	<view class="down">
+		<view class="menu card-project shadow-project">
+			<view bindtap="url" wx:for="{{cateList}}" wx:key="k" data-url="../../enroll/all_select_project/select_project?id={{item.id}}" class="item">
+				<view class="item-inner">
+					<view class="img">
+						<image src="../../../images/menu/{{item.id}}.png" />
+					</view>
+					<view class="title">{{item.title}}</view>
+				</view>
+			</view>  
+		</view> 
+	</view>
+</view>
+<view class="guanggao"> 
+      <image  src="../../../images/circular3.png" bindtap="handLetenantTap"  data-url="../../my/tenant/my_tenant"></image>
+ </view>
+<!-- <block wx:if="{{skin.IS_SUB}}">
+	<import src="../../tpls/menu_tpl.wxml" />
+	<template is="menuTpl" data="{{curMenu:'home_index',returnHome:false}}" />
+</block>  -->

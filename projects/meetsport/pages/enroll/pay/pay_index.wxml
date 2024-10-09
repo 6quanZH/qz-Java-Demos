@@ -1,0 +1,56 @@
+<view class="mask-layer" hidden="{{hidden}}">
+  <view class="mask-content">
+    <text class="mask-text">请稍候...</text>
+  </view>
+</view>
+ <view class="container"> 
+  <view class="header">
+    <view class="img-text-section">
+      <view class="img-wrap">
+        <image src="../../../images/vip.png" mode="widthFix" />
+      </view>
+      <view class="text-wrap">
+        <text class="item" style="font-weight: bold;">自助健身{{name}}</text>
+        <text class="item">VIP健身24H智能共享</text>
+        <text class="item">支持1人使用</text>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 其他内容 -->
+
+
+  
+  <view class="content">
+    <view class="section">
+      <view class="option">
+      <text class="label">支付方式</text>
+      </view>
+      <view class="option"> 
+        <view class="option-icon">
+          <image src="../../../images/wxzf.png" mode="widthFix" />
+        </view>
+        <text style="font-weight: bold;">微信支付</text>
+        <view class="option-checkbox">
+          <checkbox bindchange="checkboxChange" disabled="{{true}}" checked="{{true}}"></checkbox>
+        </view>
+      </view>
+    </view> 
+      <view class="form-group"> 
+       <view class="title">代金券</view> 
+          <view  class="pickerView" bindtap="handleCouponPickerChange" data-type="2" data-id="{{usedCoupondj.id}}">
+              <view class="picker" style="color: #999">{{usedCoupondj && usedCoupondj.name ? usedCoupondj.name : '请选择'}} </view> 
+          </view> 
+     </view>
+     <view class="form-group"> 
+       <view class="title">折扣券</view> 
+          <view  class="pickerView" bindtap="handleCouponPickerChange" data-type="1" data-id="{{usedCouponzk.id}}">
+              <view class="picker" style="color: #999">{{usedCouponzk && usedCouponzk.name ? usedCouponzk.name : '请选择'}} </view> 
+          </view> 
+     </view>
+  </view>
+  
+  <button class="bottom-button" bindtap="pay">
+    <text>￥{{totalFee}} 支付</text>
+  </button>
+</view>

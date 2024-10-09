@@ -1,0 +1,11 @@
+<view class="main padding-project">  
+	<view class="form-box shadow-project card-project"> 
+
+<view class="form-group">
+  <view class="title">租用地址</view>
+  <input bindblur="handleNickNameBlur" type="rent_address"  placeholder="填写您的公司地址" placeholder-class="phc" model:value="{{rent_address}}" maxlength="30"></input>
+</view>
+</view>
+</view>
+ 
+	<button bindtap="bindSubmitTap" class="btn-base btn-project shadow">认证租客</button> 

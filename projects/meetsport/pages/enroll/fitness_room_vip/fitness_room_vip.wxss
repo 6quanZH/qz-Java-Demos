@@ -1,0 +1,118 @@
+@import "../../../style/skin.wxss";
+.submit-line {
+	width: 100%;
+}
+ 
+.profile {  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+  
+.avatar {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%; /* 设置圆形 */
+  border: 2rpx solid #ccc; /* 可选：添加边框 */
+}
+ 
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+  height: 100vh; /* 设置容器高度为视窗高度 */
+}
+
+.form-group1 {
+  display: flex; /* 使用 Flexbox */
+  align-items: center; /* 垂直居中 */
+  margin-top: 80rpx;
+  padding: 1px 15px;
+  display: flex;
+  align-items: center;
+  min-height: 50px; 
+  justify-content: space-between;
+  position: relative; 
+} 
+
+.form-group2 {
+  display: flex; /* 使用 Flexbox */
+  align-items: center; /* 垂直居中 */  
+  align-items: center;
+  min-height: 30px; 
+  justify-content: space-between;
+  position: relative; 
+} 
+.card-container {
+  margin-top: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  min-width: 200rpx;
+  max-width: 300rpx;
+  height: 120rpx;
+  background-color: #F5F5F5;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10rpx;
+  /* 添加以下两行 */
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.card-price {
+  font-size: 48rpx;
+  color: #FF6A00;
+  margin-bottom: 10rpx;
+  /* 添加以下两行 */
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.card-duration {
+  font-size: 24rpx;
+  color: #999999;
+  /* 添加以下两行 */
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.selected {
+  background-color: rgb(57, 223, 71) !important;
+}
+
+.bottom-button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 0 0 10rpx 10rpx;
+  font-size: 32rpx;
+  z-index: 999;
+}

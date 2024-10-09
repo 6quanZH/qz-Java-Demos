@@ -1,0 +1,24 @@
+<view class="form-group1">
+    <view class="profile">
+    <image src="{{avatar_url}}" mode="aspectFill" class="avatar" bindtap="chooseAvatar"></image>
+  </view> 
+</view>
+<view class="form-group2"> 
+  <view class="profile">
+    {{nick_name}}
+  </view>
+</view>
+<view class="form-group2"> 
+  <view class="profile">
+    无会员卡生效中
+  </view>
+</view>
+
+<view class="card-container">
+  <view wx:for="{{vipRules}}" wx:key="index" class="card-item {{selectedId === item.id ? 'selected' : ''}}" data-id="{{item.id}}" data-fee="{{item.validFee}}" data-name="{{item.label}}" bindtap="selectCard">
+    <view class="card-title">{{item.label}}</view>
+    <view class="card-price">{{item.validFee}}</view> 
+  </view> 
+</view>
+
+<button class="bottom-button" bindtap="pay">立即购买</button>
